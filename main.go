@@ -17,7 +17,10 @@ func main() {
 			return
 		}
 		w.Header().Set("Content-Type", "application/json")
-		w.Write(jsonResponse)
+		_, err = w.Write(jsonResponse)
+		if err != nil {
+			return
+		}
 	})
 	err := http.ListenAndServe(":8795", nil)
 	if err != nil {
