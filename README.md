@@ -23,3 +23,7 @@ This is a basic Go language program that creates an HTTP server to display the c
 ### Note:
 
 - This server will only display the current time when accessed at the "/time" endpoint.
+
+### Authors:
+
+Maksym Rybalko, Nazarii Radichenko, Anton Dovzhenko
